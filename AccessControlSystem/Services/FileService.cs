@@ -36,7 +36,21 @@ namespace AccessControlSystem.Services
             }
             using (StreamWriter sw = File.AppendText(filePath))
             {
-                sw.WriteLine(" " + userInput + " Time " + now.ToString());
+                sw.WriteLine(" " + userInput + " Time " + now.ToString() +" Has an access");
+                sw.Close();
+            }
+        }
+        public void WriteWithoutAccess()
+        {
+            Console.WriteLine("Enter your Name again to register your visit");
+            var userInput = Console.ReadLine();
+            DateTime now = DateTime.Now;
+            if (!File.Exists(filePath))
+            {
+            }
+            using (StreamWriter sw = File.AppendText(filePath))
+            {
+                sw.WriteLine(" " + userInput + " Time " + now.ToString() + " Without Access");
                 sw.Close();
             }
         }

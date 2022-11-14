@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AccessControlSystem.Services
+/*namespace AccessControlSystem.Services
 {
     public class PassThroughControllerService : HumanRepository
     {
@@ -14,7 +14,7 @@ namespace AccessControlSystem.Services
 
 
         
-/*        public void HasAccess()
+*//*        public void HasAccess()
         {
             Random random = new Random();
             int hiddenNumber = random.Next(0, 1000);
@@ -34,8 +34,8 @@ namespace AccessControlSystem.Services
                 Console.WriteLine("You have an access", hiddenNumber, guessCounter);
                 hasAccess = true;
             }*/
-/*        }*/
+/*        }*//*
             
     }
 }
-
+*/
